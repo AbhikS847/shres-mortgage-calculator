@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+body{
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.6), /* Adjust the opacity (last value) to control the darkness of the overlay */
+    rgba(0, 0, 0, 0.8)
+  ), url('./images/cover.jpg');
+  background-size: cover; /* Adjusts the background image to cover the entire viewport */
+  background-position: center center; /* Centers the background image */
+  background-repeat: no-repeat; /* Ensures the background image is not repeated */
+}
+
 *{
   font-family: 'Manrope' !important;
 }
 /* src/App.css */
 .App {
   text-align: center;
-  background-color:#000 !important;
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
